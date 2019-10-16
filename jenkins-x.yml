@@ -1,8 +1,12 @@
 env:
 - name: DEPLOY_NAMESPACE
   value: jx-production
+- name: CHART_REPOSITORY
+  value: https://chartmuseum-jx.anthos.jenkins-x.rocks
 pipelineConfig:
   env:
   - name: DEPLOY_NAMESPACE
     value: jx-production
+  - name: CHART_REPOSITORY
+    value: https://chartmuseum-jx.anthos.jenkins-x.rocks
   pipelines: {}
